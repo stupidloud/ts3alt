@@ -1,0 +1,18 @@
+{
+    "name": "s3-compatible-server",
+    "description": "A PHP server implementing S3-compatible API",
+    "require": {
+        "php": "^8.0",
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6",
+        "ramsey/uuid": "^4.7",
+        "monolog/monolog": "^3.3",
+        "doctrine/dbal": "^3.6",
+        "ext-redis": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "S3Server\\": "src/"
+        }
+    }
+}
